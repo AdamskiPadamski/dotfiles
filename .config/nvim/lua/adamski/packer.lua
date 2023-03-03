@@ -11,6 +11,8 @@ return require('packer').startup(function(use)
   use 'nvim-lualine/lualine.nvim'
   use 'dense-analysis/ale'
   use { 'catppuccin/nvim', as = 'catppuccin' }
+  use 'williamboman/mason.nvim'
+  use 'williamboman/mason-lspconfig.nvim'
 
   use {
     'kyazdani42/nvim-tree.lua',

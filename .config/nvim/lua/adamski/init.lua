@@ -2,6 +2,8 @@ require('adamski.remappings')
 require('adamski.options')
 require('adamski.packer')
 
+require('mason').setup()
+require('mason-lspconfig').setup()
 local lspconfig = require('lspconfig')
 local cmp = require('cmp')
 local cmp_nvim_lsp = require('cmp_nvim_lsp')
@@ -54,5 +56,9 @@ lspconfig.rust_analyzer.setup({
 })
 
 lspconfig.hls.setup({
+  capabilities = updated_client_capabilities
+})
+
+lspconfig.lua_ls.setup({
   capabilities = updated_client_capabilities
 })
