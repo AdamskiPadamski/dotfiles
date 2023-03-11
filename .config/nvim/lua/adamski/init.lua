@@ -47,7 +47,7 @@ lspconfig.tsserver.setup({
   capabilities = updated_client_capabilities
 })
 
-lspconfig.ccls.setup({
+lspconfig.clangd.setup({
   capabilities = updated_client_capabilities
 })
 
