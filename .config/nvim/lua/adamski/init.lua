@@ -1,3 +1,4 @@
+require('adamski.autocmds')
 require('adamski.remappings')
 require('adamski.options')
 require('adamski.packer')
