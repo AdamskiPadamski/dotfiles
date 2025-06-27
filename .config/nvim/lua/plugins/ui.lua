@@ -47,5 +47,9 @@ return {
     end,
   },
   { "nvim-tree/nvim-web-devicons", lazy = true },
-  "nvim-lualine/lualine.nvim"
+  "nvim-lualine/lualine.nvim",
+  {
+    "nvim-telescope/telescope.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" }
+  }
 }
